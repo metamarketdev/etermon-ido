@@ -1,19 +1,23 @@
 .main-ido-list {
   padding: 2rem 0;
+
   .ido-body {
     @include flexbox();
     @include align-items(center);
     @include flex-direction(column);
-    background-color: #165db7a8;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 2rem 1rem;
+
     a {
       color: #ffb92d;
     }
+
     .logo-header {
       text-align: center;
       margin-bottom: 1rem;
     }
+
     .ido-list-header {
       text-align: center;
       font-weight: 900;
@@ -22,8 +26,10 @@
       font-size: 2rem;
       margin-bottom: 1rem;
     }
+
     .ido-info {
       margin-bottom: 2rem;
+
       .ido-info-list {
         list-style: none;
         line-height: 2;
@@ -31,9 +37,11 @@
           padding-left: 1rem;
         }
       }
+
       .ido-list-item {
         color: #ffffff;
         font-weight: bold;
+
         span.item-title {
           padding-right: 20px;
           font-weight: 900;
@@ -44,6 +52,7 @@
         }
       }
     }
+
     .ido-wallet-id {
       background-color: #ffb92d;
       padding: 0.4rem 1rem;
@@ -51,11 +60,13 @@
       font-weight: 900;
       margin-bottom: 1rem;
     }
+
     .ido-wallet-notification {
       font-weight: 900;
       font-size: 1.2rem;
       color: #ffffff;
     }
+
     .small-txt {
       font-size: 1rem;
       color: #ffffff;
@@ -63,10 +74,11 @@
     }
   }
 }
+
 .special-button {
   .sp-button {
     box-shadow: rgba(0, 0, 0, 0.4) 0 5px 0, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0 -3px 0px inset;
+    rgba(0, 0, 0, 0.2) 0 -3px 0px inset;
     background-color: #e97500;
     border: solid transparent;
     border-radius: 18px;
