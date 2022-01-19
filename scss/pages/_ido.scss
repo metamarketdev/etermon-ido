@@ -1,0 +1,122 @@
+.main-ido-list {
+  padding: 2rem 0;
+  .ido-body {
+    @include flexbox();
+    @include align-items(center);
+    @include flex-direction(column);
+    background-color: #165db7a8;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    a {
+      color: #ffb92d;
+    }
+    .logo-header {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .ido-list-header {
+      text-align: center;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .ido-info {
+      margin-bottom: 2rem;
+      .ido-info-list {
+        list-style: none;
+        line-height: 2;
+        @include media-breakpoint-down(sm) {
+          padding-left: 1rem;
+        }
+      }
+      .ido-list-item {
+        color: #ffffff;
+        font-weight: bold;
+        span.item-title {
+          padding-right: 20px;
+          font-weight: 900;
+          @include media-breakpoint-up(sm) {
+            display: inline-block;
+            width: 200px;
+          }
+        }
+      }
+    }
+    .ido-wallet-id {
+      background-color: #ffb92d;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    .ido-wallet-notification {
+      font-weight: 900;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+    .small-txt {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.special-button {
+  .sp-button {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 5px 0, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0 -3px 0px inset;
+    background-color: #e97500;
+    border: solid transparent;
+    border-radius: 18px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #11478c;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 0 0 0.5rem 0;
+    outline: none;
+    overflow: visible;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  .sp-button:after {
+    background-clip: padding-box;
+    background-color: #ffdc30;
+    border: solid transparent;
+    border-radius: 14px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .sp-button:focus {
+    user-select: auto;
+  }
+
+  .sp-button:hover:not(:disabled) {
+    filter: brightness(1.1);
+  }
+
+  .sp-button:disabled {
+    cursor: auto;
+  }
+}
