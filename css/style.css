@@ -11139,38 +11139,50 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%2350d500' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
 
-.modal-terms a {
-  color: #ffb92d;
+.modal-connect .modal-content {
+  background-color: #559fff;
 }
-.modal-terms .modal-title {
+.modal-connect .close-button-modal {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 2;
+  opacity: 1;
+  border: 0;
+  font-size: 15px;
+  margin-right: 8px;
+  margin-top: 4px;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+.modal-connect .modal-wallet .text-upper {
+  text-transform: uppercase;
+}
+.modal-connect .modal-wallet .title {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 900;
+}
+.modal-connect .modal-wallet .connect-wallet-wrap {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  cursor: pointer;
+}
+.modal-connect .connect-txt {
   font-weight: bold;
 }
-.modal-terms .ul-numeric {
-  list-style: decimal;
+.modal-connect .modal-wallet .connect-wallet-wrap .connect-wallet-item {
+  padding: 25px 10px;
+  background: #ffffff;
+  border-radius: 10px;
 }
-.modal-terms .modal-content {
-  border: unset;
-  border-radius: 0;
+.modal-connect .modal-wallet .connect-wallet-wrap .connect-wallet-item:hover {
+  background-color: #103565;
+  color: #fff;
 }
-.modal-terms .modal-header {
-  -webkit-animation: bgcolor 20s infinite;
-  animation: bgcolor 10s infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  border-radius: 0;
-}
-.modal-terms .modal-header .modal-title {
-  color: #ffffff;
-}
-.modal-terms .modal-body {
-  -webkit-animation: bgcolor 20s infinite;
-  animation: bgcolor 10s infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-.modal-terms .modal-body span {
-  font-size: 1rem;
-  color: #ffffff;
+.modal-connect img {
+  vertical-align: middle;
 }
 
 @keyframes bgcolor {
